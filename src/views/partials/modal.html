@@ -1,0 +1,36 @@
+<div id="modal" class="hide">
+    <div class="content">
+        <div class="header">
+            <h1>Pesquise Pontos Turísticos</h1>
+            <a href="#">Fechar</a>
+        </div>
+        <form action="/search">
+            <label for="search">Por Cidade/Região</label>
+            <div class="search field">
+                <input type="text" name="search" placeholder="Pesquise por cidade/região">
+                <button>
+                    <img src="/assets/search.svg" alt="Buscar">
+                </button>
+            </div>
+                <label for="search">Por Categoria</label>
+            
+        </form>
+
+        <form>
+            <div class="search option">
+                <select id="categorias" name="search" placeholder="Pesquise por categoria">
+                <option value="">Escolha a categoria</option>
+                <option>Cultura Local</option>
+                <option>Estadia Sustentável</option>
+                <option>Gastronomia Responsável</option>
+                <option>Trilhas Ecológicas</option>
+                <option>Esporte Natural</option>
+                <option>Cachoeiras/cascatas</option>
+                </select>
+                <button>
+                    <img src="/assets/search.svg" alt="Buscar">
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

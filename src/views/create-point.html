@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{% block title %}
+    <title>Criar Ponto Turístico</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <form action="/savepoint" method="POST">
+        <h1>Cadastrar Serviço</h1>
+
+        <fieldset>
+            <legend>
+                <h2>Dados da oferta do serviço</h2>
+            </legend>
+
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Título da Atividade</label>
+                    <input type="text" name="title" required="required" placeholder="Exemplo: Hotel nas montanhas">
+                </div>
+                <div class="field">
+                    <label for="name">Imagem</label>
+                    <input type="url" name="url" required="required" placeholder="http://">
+                   
+                </div>                            
+
+                
+            </div>
+
+
+            <div class="field-group">
+
+                <div class="field">
+                    <label for="name">Descrição</label>
+                    <input type="text" name="description" required="required" placeholder="Atrações, diferenciais, serviços...">
+                </div>
+
+             
+                
+            </div>
+            <div class="field-group">
+
+                <div class="field">
+                    <label for="name">Regras/Protocolos</label>
+                    <input type="text" name="rules" required="required" placeholder="Regras e requisitos">
+                </div>
+
+                  <div class="field">
+                    <label for="name">Capacidade de Carga</label>
+                    <input type="password" name="capacity" required="required" placeholder="Quantas pessoas suporta">
+                </div>
+                
+            </div>
+
+
+            <div class="field-group">
+
+                <div class="field">
+                    <label for="name">Telefone de Contato</label>
+                    <input type="tel" name="tel" required="required">
+                </div>
+
+                <div class="field">
+                    <label for="name">Email de Contato</label>
+                    <input type="email" name="email" required="required" placeholder="nome@mail.com.br">
+                </div>
+                
+            </div>
+
+
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="address">Endereço</label>
+                    <input type="text" name="address" required="required">
+                </div>
+</div>
+
+
+                <div class="field-group">
+                <div class="field">
+                    <label for="address2">Número / Complemento</label>
+                    <input type="text" name="address2" required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf" required="required">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+
+                    <input type="hidden" name="state">
+                </div>
+
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select name="city" disabled="disabled" required="required">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>Categorias</h2>
+                <span>Selecione categorias de serviço abaixo! :)</span>
+            </legend>
+
+            <div class="items-grid">
+                <li data-id="Cultura">
+                    <img src="/assets/people.svg" alt="Cultura Local">
+                    <span>Cultura Local</span>
+                </li>
+
+                <li data-id="Culinária">
+                    <img src="/assets/undraw_Chef_cu0r.svg" alt="Culinária Responsável">
+                    <span>Culinária Responsável</span>
+                </li>
+
+                <li data-id="Hospedagem Sustentável">
+                    <img src="/assets/undraw_cabin_hkfr (1).svg" alt="Hospedagem Sustentável">
+                    <span>Hospedagem Sustentável</span>
+                </li>
+
+                <li data-id="Trilhas Ecológicas">
+                    <img src="/assets/undraw_walking.svg" alt="Trilhas Ecológicas">
+                    <span>Trilhas Ecológicas</span>
+                </li>
+
+                <li data-id="Esporte Natural">
+                    <img src="/assets/undraw_bike.svg" alt="Esporte Natural">
+                    <span>Esporte Natural</span>
+                </li>
+
+                <li data-id="Outros">
+                    <img src="/assets/plus.svg" alt="Outros">
+                    <span>Outros</span>
+                </li>
+            </div>
+
+            <input type="hidden" name="items">
+        </fieldset>
+
+        <button type="submit">Cadastrar Serviço</button>
+
+    </form>
+
+{% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {% include "partials/point-created.html" %}
+    {% endif %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}
