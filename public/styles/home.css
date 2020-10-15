@@ -51,7 +51,7 @@
   width: 100%;
   max-width: 360px;
   height: 72px;
-  border-radius: 8px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
 
@@ -71,7 +71,43 @@
   width: 100%;
   max-width: 360px;
   height: 72px;
-  border-radius: 8px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  background-color: #db8686;
+  transition: 600ms;
+}
+
+#page-home main .community {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  background-color: #db8686;
+  transition: 400ms;
+}
+
+#page-home main .tutorials {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  background-color: #db8686;
+  transition: 400ms;
+}
+
+#page-home main .community {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
 
@@ -92,9 +128,33 @@
 
 #page-home main .pesquisa span::after {
   content: "";
-  background-image: url("../assets/search.svg");
+  background-image: url("../assets/seearch.svg");
   width: 20px;
   height: 20px;
+}
+
+#page-home main .TBC {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--primary-color);
+  transition: 400ms;
+}
+
+#page-home main .rules {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--primary-color);
+  transition: 400ms;
 }
 
 #page-home main .cadastro span::after {
