@@ -59,4 +59,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
  <img src="./namata.jpg"/> 
 
 
+## Grupo:
 
+Tatiana Fischer e Pedro Maia (responsáveis pelo código)
+Clara Carolina
+Beatriz Papin
+Adilson Chrestani
+Leonardo Cardoso
