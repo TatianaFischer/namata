@@ -19,7 +19,10 @@ server.get("/", (req, res) => {
     return res.render("index.html", {title: "Título"})
 })
 
+server.get("/search-attractions", (req, res) => {
 
+    return res.render("search-attractions.html")
+})
 
 
 server.get("/create-point", (req, res) => {
