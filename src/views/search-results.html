@@ -17,22 +17,29 @@
 
     {% if total > 0 %}
 
-        <h4>
-            <strong>{{total}} pontos</strong>
-            encontrados
-        </h4>
-
+   <strong><h4>NOME DA COMUNIDADE</h4></strong> 
+       
+   <strong><p>Descrição:</p></strong> 
+   <strong><p>Regras:</p></strong> 
+   <strong><p>Contato:</p></strong> 
+    </br>
         <div class="cards">
 
             {% for place in places %}
                 <div class="card">
-                    <img src="{{place.image}}" alt="{{place.name}}">
-                    <h1>{{place.name}}</h1>
-                    <h3>{{place.items}}</h3>
+                    <img src="https://images.pexels.com/photos/1230302/pexels-photo-1230302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="{{place.name}}">
+                    <h1>Guia Turístico</h1>
+                    <h3>José da Silva</h3>
                     <p>
-                        {{place.city}}, {{place.state}}<br/>
-                        {{place.address}}<br/>
-                        {{place.address2}}
+                        local, 12h-18h<br/>
+                        Nome da Trilha<br/>
+                        Capacidade de pessoas: 5
+                        Duranção: 45min
+                        Regras: 
+                        1. 
+                        2.
+                        3.
+                        Descrição: Conheça as mais lindas cachoeiras em trilhas a pé.
                     </p>
                 </div>
             {% endfor %}
