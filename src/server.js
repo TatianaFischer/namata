@@ -30,6 +30,12 @@ server.get("/create-point", (req, res) => {
     return res.render("create-point.html")
 })
 
+server.get("/created-community", (req, res) => {
+
+    return res.render("created-community.html")
+})
+
+
 server.post("/savepoint", (req, res) => {
 
     //console.log(req.body)

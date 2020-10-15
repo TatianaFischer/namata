@@ -1,5 +1,25 @@
-<form action="/savepoint" method="POST">
+{% extends "layout.html" %}
+
+<!-- {% set pageId = "page-created-community" %} -->
+
+{% block title %}
+    <title>Criar Comunidade</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/created-community.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <form>
+
+
+
         <h1>Cadastrar Comunidade</h1>
+
 
         <fieldset>
             <legend>
@@ -12,35 +32,51 @@
                     <label for="name">Nome</label>
                     <input type="text" name="title" required="required" placeholder="Exemplo: Pomeranos">
                 </div>
-                
-            <div class="field-group">
+            </div> 
 
+            <div class="field-group">
                 <div class="field">
                     <label for="name">Telefone de Contato</label>
                     <input type="tel" name="tel" required="required">
                 </div>
+            </div>
 
+            <div class="field-group">
                 <div class="field">
                     <label for="name">Email de Contato</label>
                     <input type="email" name="email" required="required" placeholder="nome@mail.com.br">
                 </div>
-                
             </div>
+
+            <div class="field-group"> 
                 <div class="field">
                     <label for="name">Imagem</label>
                     <input type="url" name="url" required="required" placeholder="http://">
-                   
-                </div>                            
+                </div>  
+            </div>                               
 
                 
-            </div>
-
-
             <div class="field-group">
 
                 <div class="field">
                     <label for="name">Descrição</label>
                     <input type="text" name="description" required="required" placeholder="Atrações, diferenciais, serviços...">
                 </div>
-                </div>
-                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit">Cadastrar Comunidade</button>
+
+    </form>
+
+                {% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {% include "partials/point-created.html" %}
+    {% endif %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}

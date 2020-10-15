@@ -1,22 +1,26 @@
 <div id="modal" class="hide">
     <div class="content">
         <div class="header">
-            <h1>Pesquise Pontos Turísticos</h1>
+            <h1>Pesquise Comunidades</h1>
             <a href="#">Fechar</a>
         </div>
         <form action="/search">
-            <label for="search">Por Cidade/Região</label>
+            <label for="search">Pelo nome</label>
             <div class="search field">
-                <input type="text" name="search" placeholder="Pesquise por cidade/região">
+                <input type="text" name="search" placeholder="Pesquise por nomde da Comunidade">
                 <button>
                     <img src="/assets/search.svg" alt="Buscar">
                 </button>
             </div>
-                <label for="search">Por Categoria</label>
+
+            <div>
+                <img class="map-test" src="/assets/mapa-so.png"/>
+            </div>
+               
             
         </form>
 
-        <form>
+        <!-- <form>
             <div class="search option">
                 <select id="categorias" name="search" placeholder="Pesquise por categoria">
                 <option value="">Escolha a categoria</option>
@@ -31,6 +35,6 @@
                     <img src="/assets/search.svg" alt="Buscar">
                 </button>
             </div>
-        </form>
+        </form> -->
     </div>
 </div>
