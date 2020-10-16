@@ -9,7 +9,7 @@ Projeto NAMATA - projeto front-end
 
 <p>
  >> Status do Projeto: Em desenvolvimento :warning: <<  
-  Futuramente
+  Futuramente React.js
   
 </p>
 
