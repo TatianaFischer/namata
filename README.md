@@ -1,9 +1,11 @@
 
 <h1 align="center">
 🍃🍃🍃🍃 Projeto NAMATA - projeto front-end
-</h1>
  
- <img src="./NAMATA_3.png"/>  
+ <img  src="./NAMATA_3.png"/>  
+</h1>
+
+ 
 
 <p>
  >> Status do Projeto: Em desenvolvimento :warning: <<  
