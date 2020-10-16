@@ -3,7 +3,7 @@
 🍃🍃🍃🍃 Projeto NAMATA - projeto front-end
 </h1>
  
-
+ <img src="./NAMATA_3.png"/>  
 
 <p>
  >> Status do Projeto: Em desenvolvimento :warning: <<  
@@ -61,8 +61,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Grupo:
 
-Tatiana Fischer e Pedro Maia (responsáveis pelo código)
-Clara Carolina
-Beatriz Papin
-Adilson Chrestani
-Leonardo Cardoso
+<li>Tatiana Fischer e Pedro Maia (responsáveis pelo código)</li>
+<li>Clara Carolina</li>
+<li>Beatriz Papin</li>
+<li>Adilson Chrestani</li>
+<li>Leonardo Cardoso</li>
